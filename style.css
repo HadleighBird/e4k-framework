@@ -1,0 +1,280 @@
+/**
+ * Theme Name: E4K Framework
+ * Theme URI: http://www.e4k.co
+ * Author: E4K Dev Team
+ * Author URI: http://www.e4k.co
+ * Description: Custom WordPress Theme created by the E4K Development Team. This theme is just a template to help build up the process speed of creating a website. This theme is using WordPress coding standards
+ * Version: 0.96.0
+ */
+
+/* Import Fonts */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/**
+|---------------------
+| =Global Styles
+|---------------------
+*/
+
+body {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default;
+}
+
+p {
+    cursor: default;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%
+}
+
+.text-muted {
+    color: #777777;
+}
+
+/* Temp Navbar Styles - Removed to style your own navbar */
+nav.navbar-default {
+    background-color: #f0f0f0;
+    position: relative;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+}
+
+nav.navbar-default ul.nav a {
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+nav.navbar-default ul.nav a:hover,
+nav.navbar-default ul.nav a:focus {
+    background-color: transparent;
+    color: #777;
+}
+
+nav.navbar-default ul.dropdown-menu {
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .20);
+    border: none;
+    z-index: 1001;
+    left: 50%;
+    transform: translate( -50%, 0 );
+    padding: 0;
+}
+
+nav.navbar-default ul.dropdown-menu a {
+    padding: 15px 0;
+    text-align: center;
+    min-width: 175px;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav.navbar-default ul.dropdown-menu li:last-of-type a {
+    border-bottom: none;
+}
+
+/* Temp Footer Styles - Removed to style your own footer */
+footer#main-footer {
+    background-color: #242424;
+    margin-top: 150px;
+}
+
+footer#main-footer p {
+    margin: 0;
+}
+
+footer#main-footer div.copyright {
+    padding: 10px 0;
+}
+
+footer#main-footer div.copyright p.powered-by {
+    float: right;
+}
+
+footer#main-footer div.copyright p.powered-by a {
+    color: #96CA1E
+}
+
+footer#main-footer div.social-media {
+    background-color: #303030;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer#main-footer div.social-media a {
+    background-color: #fefefe;
+    color: #fefefe;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+footer#main-footer div.social-media a:last-of-type {
+    margin-right: 0;
+}
+
+/* Remove Pull Left and Right on Mobiles */
+@media screen and ( max-width: 767px ) {
+    footer#main-footer div.copyright p {
+        float: none!important;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    footer#main-footer div.copyright p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* Use BrandColors.net for the Colors of all Soical Links */
+footer#main-footer div.social-media a.facebook {
+    background-color: #3b5998;
+}
+
+footer#main-footer div.social-media a.twitter {
+    background-color: #1da1f2;
+}
+
+footer#main-footer div.social-media a.google {
+    background-color: #dd4b39;
+}
+
+footer#main-footer div.social-media a.instagram {
+    background: -webkit-gradient(linear, 333 0, 0 337, from(#8043af), color-stop(0.029, #8442aa), color-stop(0.029, #8740a9), color-stop(0.042, #8842a8), color-stop(0.059, #8d3fa7), color-stop(0.067, #8d41a4), color-stop(0.164, #9d3d9c), color-stop(0.164, #9f3c9a), color-stop(0.202, #a63b96), color-stop(0.202, #a73a97), color-stop(0.23, #a83b96), color-stop(0.23, #aa3a92), color-stop(0.253, #ac3990), color-stop(0.312, #b63a8b), color-stop(0.35, #b93a88), color-stop(0.35, #bb3986), color-stop(0.374, #bc3986), color-stop(0.374, #be3884), color-stop(0.397, #c03a83), color-stop(0.403, #c13c83), color-stop(0.412, #c4397f), color-stop(0.443, #c63b7a), color-stop(0.469, #ca3d75), color-stop(0.475, #cb3c75), color-stop(0.494, #ca3e74), color-stop(0.494, #cc3d74), color-stop(0.503, #ce3e75), color-stop(0.503, #cf3d74), color-stop(0.591, #d84466), color-stop(0.591, #d94367), color-stop(0.904, #ef6744), color-stop(0.951, #f26a43), color-stop(0.951, #f26c42), color-stop(0.978, #f3703f), color-stop(0.978, #f46f40), color-stop(0.997, #f57041), color-stop(0.997, #f47141), to(#f47141));
+    background: -webkit-linear-gradient(225.34206029135854deg, #8043af, #8442aa 2.9%, #8740a9 2.9%, #8842a8 4.2%, #8d3fa7 5.9%, #8d41a4 6.7%, #9d3d9c 16.4%, #9f3c9a 16.4%, #a63b96 20.2%, #a73a97 20.2%, #a83b96 23%, #aa3a92 23%, #ac3990 25.3%, #b63a8b 31.2%, #b93a88 35%, #bb3986 35%, #bc3986 37.4%, #be3884 37.4%, #c03a83 39.7%, #c13c83 40.3%, #c4397f 41.2%, #c63b7a 44.3%, #ca3d75 46.9%, #cb3c75 47.5%, #ca3e74 49.4%, #cc3d74 49.4%, #ce3e75 50.3%, #cf3d74 50.3%, #d84466 59.1%, #d94367 59.1%, #ef6744 90.4%, #f26a43 95.1%, #f26c42 95.1%, #f3703f 97.8%, #f46f40 97.8%, #f57041 99.7%, #f47141 99.7%, #f47141);
+    background: -moz-linear-gradient(225.34206029135854deg, #8043af, #8442aa 2.9%, #8740a9 2.9%, #8842a8 4.2%, #8d3fa7 5.9%, #8d41a4 6.7%, #9d3d9c 16.4%, #9f3c9a 16.4%, #a63b96 20.2%, #a73a97 20.2%, #a83b96 23%, #aa3a92 23%, #ac3990 25.3%, #b63a8b 31.2%, #b93a88 35%, #bb3986 35%, #bc3986 37.4%, #be3884 37.4%, #c03a83 39.7%, #c13c83 40.3%, #c4397f 41.2%, #c63b7a 44.3%, #ca3d75 46.9%, #cb3c75 47.5%, #ca3e74 49.4%, #cc3d74 49.4%, #ce3e75 50.3%, #cf3d74 50.3%, #d84466 59.1%, #d94367 59.1%, #ef6744 90.4%, #f26a43 95.1%, #f26c42 95.1%, #f3703f 97.8%, #f46f40 97.8%, #f57041 99.7%, #f47141 99.7%, #f47141);
+    background: -o-linear-gradient(225.34206029135854deg, #8043af, #8442aa 2.9%, #8740a9 2.9%, #8842a8 4.2%, #8d3fa7 5.9%, #8d41a4 6.7%, #9d3d9c 16.4%, #9f3c9a 16.4%, #a63b96 20.2%, #a73a97 20.2%, #a83b96 23%, #aa3a92 23%, #ac3990 25.3%, #b63a8b 31.2%, #b93a88 35%, #bb3986 35%, #bc3986 37.4%, #be3884 37.4%, #c03a83 39.7%, #c13c83 40.3%, #c4397f 41.2%, #c63b7a 44.3%, #ca3d75 46.9%, #cb3c75 47.5%, #ca3e74 49.4%, #cc3d74 49.4%, #ce3e75 50.3%, #cf3d74 50.3%, #d84466 59.1%, #d94367 59.1%, #ef6744 90.4%, #f26a43 95.1%, #f26c42 95.1%, #f3703f 97.8%, #f46f40 97.8%, #f57041 99.7%, #f47141 99.7%, #f47141);
+    background: linear-gradient(224.65793970864146deg, #8043af, #8442aa 2.9%, #8740a9 2.9%, #8842a8 4.2%, #8d3fa7 5.9%, #8d41a4 6.7%, #9d3d9c 16.4%, #9f3c9a 16.4%, #a63b96 20.2%, #a73a97 20.2%, #a83b96 23%, #aa3a92 23%, #ac3990 25.3%, #b63a8b 31.2%, #b93a88 35%, #bb3986 35%, #bc3986 37.4%, #be3884 37.4%, #c03a83 39.7%, #c13c83 40.3%, #c4397f 41.2%, #c63b7a 44.3%, #ca3d75 46.9%, #cb3c75 47.5%, #ca3e74 49.4%, #cc3d74 49.4%, #ce3e75 50.3%, #cf3d74 50.3%, #d84466 59.1%, #d94367 59.1%, #ef6744 90.4%, #f26a43 95.1%, #f26c42 95.1%, #f3703f 97.8%, #f46f40 97.8%, #f57041 99.7%, #f47141 99.7%, #f47141);
+}
+
+footer#main-footer div.social-media a.linkedin {
+    background-color: #0077b5;
+}
+
+section#error-page {
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 149px;
+}
+
+div#slider {
+    background-color: #fff;
+    height: 450px;
+}
+
+div#slider div.carousel-cell {
+    width: 100%;
+    height: 450px;
+    margin-right: 10px;
+}
+
+div#slider div.carousel-cell div.background-image {
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.about-template-1-banner {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+div.about-template-1-banner-text {
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+div.about-template-1-banner h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+div.about-template-1-image {
+    margin-bottom: 15px;
+}
+
+div.about-template-2-banner {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+div.about-template-2-banner-text {
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+div.about-template-2-banner h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+div.about-template-2-content {
+    margin: 30px 0px;
+}
+
+div.about-template-3-banner {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+div.about-template-3-banner-text {
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+div.about-template-3-banner h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+div.about-template-3-full {
+    padding: 15px 0px;
+}
+
+div.about-template-3-full-content {
+    color: #fff;
+    font-size: 20px;
+}

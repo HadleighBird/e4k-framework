@@ -1,0 +1,106 @@
+/* Hide Desktop Menu on Mobiles */
+@media screen and ( max-width: 767px ) {
+    nav.desktop-menu {
+        display: none!important;
+    }
+}
+
+/* Mobile Navigation */
+@media screen and ( min-width: 767px ) {
+    div.mobile-menu {
+        display: none!important;
+    }
+    header#navbar-wrapper button.nav-toggle {
+        display: none!important;
+    }
+}
+
+header#navbar-wrapper button.nav-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    float: right;
+    margin-top: 14px;
+}
+
+header#navbar-wrapper button.nav-toggle:focus { outline: 0; }
+
+header#navbar-wrapper button.nav-toggle span.icon {
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #bbb;
+    transition: all .5s ease;
+}
+
+header#navbar-wrapper button.nav-toggle.collapse span.icon-top {
+    transform: rotate(45deg);
+    transform-origin: 20% 15%;
+}
+
+header#navbar-wrapper button.nav-toggle.collapse span.icon-middle { opacity: 0; }
+
+header#navbar-wrapper button.nav-toggle.collapse span.icon-bottom {
+    transform: rotate(-45deg);
+    transform-origin: 0% 10%;
+}
+
+header#navbar-wrapper button.nav-toggle span.icon + span.icon { margin-top: 4px; }
+
+div.mobile-menu {
+    background-color: #f0f0f0;
+}
+
+div.mobile-menu nav.mobile-nav {
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: none;
+    border-top: 1px solid #bbb;
+    transition: all .5s ease-in-out;
+}
+
+div.mobile-menu nav.mobile-nav.active {
+    display: block;
+}
+
+div.mobile-menu nav.mobile-nav ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+}
+
+div.mobile-menu nav.mobile-nav ul.menu a {
+    padding: 12px 15px;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #bbbbbb;
+    color: #878787;
+    text-transform: uppercase;
+    padding-right: 60px;
+}
+
+div.mobile-menu nav.mobile-nav ul.menu a i.toggle {
+    position: absolute;
+    font-size: 34px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 60px;
+    line-height: 48px;
+    height: 100%;
+    color: #bbbbbb;
+    transition: all .6s ease;
+    border-left: 1px solid #bbbbbb;
+}
+
+div.mobile-menu nav.mobile-nav ul.sub-menu { display: none; }
+div.mobile-menu nav.mobile-nav ul.sub-menu.active {
+        display: block;
+        background-color: rgba(0, 0, 0, .05);
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }

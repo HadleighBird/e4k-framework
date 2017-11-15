@@ -1,0 +1,75 @@
+/* Variables Files */
+/* Website Colours */
+/* Social Media Colous */
+/* WordPress Admin Styles */
+body.login {
+  background: #e8e8e8; }
+
+body.login div#login h1 a {
+  background: url("../imgs/admin-logo/e4k-logo.png") no-repeat;
+  background-position: center;
+  background-color: #212121;
+  padding: 10px 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 35px -1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 35px -1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px; }
+
+body.login div#login form#loginform {
+  background: #fefefe;
+  -webkit-box-shadow: 0 0 35px -5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 35px -5px rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 0; }
+
+body.login div#login form#loginform p label {
+  color: #000000;
+  font-size: 15px; }
+
+body.login div#login form#loginform input {
+  background: none;
+  color: #000000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212121; }
+  body.login div#login form#loginform input#user_login, body.login div#login form#loginform input#user_pass {
+    padding: 5px 15px;
+    height: 55px; }
+
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+  background: transparent;
+  border-width: 1px;
+  border-color: #212121;
+  border-style: solid; }
+  body.login div#login form#loginform p.forgetmenot input#rememberme::before {
+    color: #212121; }
+
+body.login div#login form#loginform p.submit input#wp-submit {
+  border: 1px solid #212121;
+  color: #212121;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 35px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-shadow: none;
+  font-weight: bold; }
+  body.login div#login form#loginform p.submit input#wp-submit:hover {
+    background-color: #212121;
+    color: #fefefe; }
+
+body.login div#login p#nav {
+  text-align: center; }
+
+body.login div#login p#backtoblog {
+  text-align: center; }
+
+#contact {
+  padding-bottom: 40px; }

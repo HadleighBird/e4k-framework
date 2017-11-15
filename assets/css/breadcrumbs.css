@@ -1,0 +1,41 @@
+/**
+|------------------------
+| =Custom Breadcrumbs
+|------------------------
+*/
+nav.breadcrumb-trail {
+    display: block;
+    background-color: #efefef;
+    padding: 5px 0;
+}
+
+nav.breadcrumb-trail ul {
+    display: block;
+    margin: 0;
+}
+
+nav.breadcrumb-trail ul > li {
+    list-style-type: none;
+    display: inline-block;
+    cursor: default;
+}
+
+nav.breadcrumb-trail ul > li::after {
+    font-family: 'FontAwesome';
+    content: '\f105';
+    padding: 0 15px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+nav.breadcrumb-trail ul > li:last-of-type::after {
+    display: none;
+}
+
+nav.breadcrumb-trail ul > li i.fa-home {
+    font-size: 145%;
+}
+
+nav.breadcrumb-trail ul > li > a {
+    color: #242424;
+}
